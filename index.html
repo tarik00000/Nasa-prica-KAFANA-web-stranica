@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/kafa title(1).png">
+    
+    <title>NAŠA PRIČA</title>
+    
+</head>
+<body>
+    <div class="background"></div>
+    <header class="fixed-header">
+        <h1>Naša Priča</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Pocetna</a></li>
+                <li><a href="meni.html">Meni</a></li>
+                <li><a href="rezervacije.html">Rezervacija</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="dobro_dosli">
+            <h2><b>Dobro</b> došli u <span class="n">Naša Priča!</span></h2>
+        </div>
+        <div class="text">
+            <h3><b>Uživajte <br> </b> u ukusnim pićima i kolačima u prijatnom ambijentu.</h3>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container">
+            <h2>O nama</h2>
+            <p>Dobrodošli u Kafić Naša Priča, mjesto gdje se susreću ljubitelji kafe i uživanja u ugodnom okruženju. Naša priča počela je s ljubavlju prema kvalitetnoj kafi i željom da stvorimo prostor gdje svaki posjetitelj može pronaći svoju priču.</p>
+            <p>Uživajte u širokom izboru kvalitetnih pića, ukusnim kolačima i opuštenom ambijentu. Naša strast je pružiti vam vrhunsko iskustvo svaki put kad posjetite naš kafić.</p>
+        </div>
+    </section>
+    <div class="container">
+      
+    </div>
+    
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+    
+        function scrollFunction() {
+            var btn = document.getElementById("scrollToTopBtn");
+    
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        }
+    
+        function scrollToTop() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+
+    </script>
+    <footer>
+        <p>&copy;2023 Naša Priča. Sva prava zadržana.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,214 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("logo.jpg");
+    background-size: 1980px 881px;
+    background-repeat: no-repeat;
+    background-position: 0 0px;
+    opacity: 0;
+    animation: fadeInBackground 1.5s ease-in-out forwards;
+    z-index: -1;
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+nav ul li a {
+    
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+nav ul li:hover a {
+    transform: scale(1.1);
+}
+
+
+nav ul li:hover {
+    border-bottom: 2px solid #fff;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    
+    opacity: 0;
+    animation:  fadeIn 1.5s ease-in-out forwards;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 999; 
+}
+@keyframes enlargeAndReduce {
+    0% {
+        transform: scale(1.5); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
+.dobro_dosli,
+.text {
+    animation: enlargeAndReduce 5s ease;
+}
+
+.dobro_dosli:hover .dobro_dosli,
+.text:hover .text {
+    animation: none;
+    transform: scale(1.1);
+    transition: transform 0.3s; 
+}
+
+.dobro_dosli {
+    color: #333;
+    border-bottom: 2px solid #333;
+    border-width: 0 80px;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text {
+    color: #fff;
+    text-align: center;
+}
+
+.n {
+    color: #fff;
+}
+
+#about {
+    background-image: url("kafa pozadina.png");
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: 0px 533px;
+    background-size: 100%;
+    padding: 40px 0;
+    margin-bottom: 40px;
+   
+}
+
+
+#about .container {
+    text-align: left;
+    margin: 0 70px;
+}
+
+#about h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease; 
+}
+
+#about h2:hover {
+    transform: translateX(50px); 
+}
+
+#about p {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    animation: moveAlive 2s infinite;
+    transition: transform 0.5s ease; 
+}
+
+#about p:hover {
+    transform: translateX(50px); 
+}
+
+
+/* Novi stilovi za postavljanje "O nama" sekcije prema dnu stranice */
+#about {
+    position: relative;
+}
+
+#about::before {
+    content: "";
+    display: block;
+    height: 700px; /* Visina će popuniti preostali prostor do dna stranice */
+    margin-top: -40px; /* Uklanja dodatni prostor koji bi bio između sekcije i dna stranice */
+    z-index: -1;
+}

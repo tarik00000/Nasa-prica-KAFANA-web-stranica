@@ -1,0 +1,150 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="meni.css">
+    <link rel="icon" type="image/png" href="/kafa title(1).png">
+    <title>Naša Priča - Meni</title>
+</head>
+<body>
+    <header class="fixed-header">
+        <h1>Naša Priča</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Pocetna</a></li>
+                <li><a href="meni.html">Meni</a></li>
+                <li><a href="rezervacije.html">Rezervacija</a></li>
+                <li class="search-container">
+                <input type="text" id="searchInput" oninput="performSearch()" onkeydown="checkEnter(event)" placeholder="Pretraži...">
+            </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="menu">
+        <h2>Naš Meni</h2>
+
+        <div class="category">
+            <h3>Kafa</h3>
+            <div class="item">
+                <h4>Espresso</h4>
+                <div class="espresso">
+                <img class="espresso_img" src="/espresso.jpg" alt="">
+                <p class="espresso_text"><b>Jednostruki (2KM) ili dupli espresso (2,50KM), intenzivnog ukusa.</b></p>
+            </div>
+            </div>
+
+            <div class="item">
+                <h4>Cappuccino</h4>
+                <img class="cappuccino_img" src="/Cappuccino.jpeg" alt="">
+                <p class="cappuccino"><b>Kafa sa parom mleka i kremastom pjenom (3KM).</b></p>
+            </div>
+            <div class="item">
+                <h4>Latte</h4>
+                <div class="latte">
+                <img class="latte_img" src="/latte.jpg" alt="">
+                <p class="latte_text"><b>Kafa sa više mleka i mliječnom pjenom (3,50KM).</b></p>
+            </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Sokovi</h3>
+            <div class="item">
+                <h4>Narandža Fresh</h4>
+                <div class="narandza_fresh">
+                <img class="narandza_fresh_img" src="/narandza_fresh.jpg" alt="">
+                <p class="narandza_fresh_text"><b>Sveže ceđeni sok od narandže (3,50KM).</b></p>
+            </div>
+        </div>
+            <div class="item">
+                <h4>Jabuka Bliss</h4>
+                <div class="jabuka_bliss">
+                <img class="jabuka_bliss_img" src="jabuka.jpg" alt="">
+                <p class="jabuka_bliss_text"><b>Osvežavajući sok od jabuke (3KM).</b></p>
+            </div>
+        </div>
+            <div class="item">
+                <h4>Ananas Delight</h4>
+                <div class="ananas">
+                <img class="ananas_img" src="/ananas.jpg" alt="">
+                <p class="ananas_text"><b>Slatki sok od ananasa (3,50KM).</b></p>
+            </div>
+            </div>
+            
+            <div class="item">
+                <h4>Flasirana Voda</h4>
+                <div class="flasirana_voda">
+                <img class="flasirana_voda_img" src="/flasirana_voda.jpg" alt="">
+                <p class="flasirana_voda_text"><b>Mineralna voda, flaširana (2KM).</b></p>
+            </div>
+            </div>
+            <div class="item">
+                <h4>Kisela</h4>
+                <div class="kisela">
+                <img class="kisela_img" src="/kisela.jpg" alt="">
+                <p class="kisela_text"><b>Kisela voda (3KM).</b></p>
+            </div>
+        </div>
+
+        <div class="category">
+            <h3>Kolači</h3>
+            <div class="item">
+                <h4>Tiramisu</h4>
+                <div class="tiramisu">
+                <img class="tiramisu_img" src="/tiramisu.jpg" alt="">
+                <p class="tiramisu_text"><b>Klasični italijanski desert sa kafom i kremom (4KM).</b></p>
+            </div>
+            </div>
+            <div class="item">
+                <div class="cokoladna_torta">
+                <h4>Čokoladna Torta</h4>
+                    <img class="cokoladna_torta_img" src="/Čokoladna Torta.jpeg" alt="">
+                <p class="cokoladna_torta_text"><b>Sočna čokoladna torta sa preljevom od tamne čokolade (4,50KM).</b></p>
+            </div>
+            </div>
+            
+
+        
+        </div>
+    </section>
+    <footer>
+        <p>&copy;2023 Naša Priča. Sva prava zadržana.</p>
+    </footer>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+    
+        function scrollFunction() {
+            var btn = document.getElementById("scrollToTopBtn");
+    
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        }
+    
+        function scrollToTop() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        }
+
+       
+     
+
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+   
+   
+</body>
+</html>

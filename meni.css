@@ -1,0 +1,542 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    animation: fadeInBackground 1s ease-in-out forwards;
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s;
+}
+
+nav ul li:hover a {
+    transform: scale(1.1);
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #fff;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    border-bottom: none; 
+}
+.search-container {
+    align-items: center;
+   
+}
+.search-container:hover{
+    border-bottom: none;
+}
+
+
+#searchInput {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    margin-left: 10px; 
+    outline: none;
+}
+  
+  header {
+    
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    opacity: 0;
+    animation:  fadeIn 1.5s ease-in-out forwards;
+  }
+  @keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    
+}
+
+.menu {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+    text-align: center;
+    animation: enlargeAndReduce 5s ease;
+}
+
+@keyframes enlargeAndReduce {
+    0% {
+        transform: scale(1.5);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.category {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.espresso:hover .espresso_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.espresso_img {
+    width: 20%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.espresso:hover .espresso_img{
+    transform: scale(1.0);
+}
+
+.espresso_text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    font-style: italic;
+}
+
+.espresso:hover .espresso_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.espresso_img {
+    width: 40%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.espresso:hover .espresso_img{
+    transform: scale(1.0);
+}
+
+.item {
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+
+.item h4 {
+    color: #555;
+}
+
+.cappuccino {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    font-style: italic;
+}
+
+.item:hover .cappuccino  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cappuccino_img {
+    width: 40%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.item:hover .cappuccino_img{
+    transform: scale(1.0);
+}
+
+.latte:hover .latte_text  {
+    visibility: visible;
+    opacity: 1;
+}
+.latte:hover .latte_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.latte_img {
+    width: 40%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.latte:hover .latte_img{
+    transform: scale(1.0);
+}
+
+.latte_text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    font-style: italic;
+}
+.narandza_fresh_text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    font-style: italic;
+}
+
+.narandza_fresh:hover .narandza_fresh_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.narandza_fresh_img {
+    width: 40%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.narandza_fresh:hover .narandza_fresh_img{
+    transform: scale(1.0);
+}
+
+.jabuka_bliss_img {
+    width: 20%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.jabuka_bliss:hover .jabuka_bliss_img{
+    transform: scale(1.0);
+}
+
+.jabuka_bliss_text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    font-style: italic;
+}
+
+.jabuka_bliss:hover .jabuka_bliss_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.jabuka_bliss_img {
+    width: 40%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.jabuka_bliss:hover .jabuka_bliss_img{
+    transform: scale(1.0);
+}
+.ananas:hover .ananas_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ananas_img {
+    width: 20%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.ananas:hover .ananas_img{
+    transform: scale(1.0);
+}
+
+.ananas_text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    font-style: italic;
+}
+
+.ananas:hover .ananas_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ananas_img {
+    width: 40%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.ananas:hover .ananas_img{
+    transform: scale(1.0);
+}
+.flasirana_voda:hover .flasirana_voda_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.flasirana_voda_img {
+    width: 20%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.flasirana_voda:hover .flasirana_vodau_img{
+    transform: scale(1.0);
+}
+
+.flasirana_voda_text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    font-style: italic;
+}
+
+.flasirana_voda:hover .flasirana_voda_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.flasirana_voda_img {
+    width: 40%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.flasirana_voda:hover .flasirana_voda_img{
+    transform: scale(1.0);
+}
+.kisela:hover .kisela_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.kisela_img {
+    width: 20%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.kisela:hover .kisela_img{
+    transform: scale(1.0);
+}
+
+.kisela_text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    font-style: italic;
+}
+
+.kisela:hover .kisela_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.kisela_img {
+    width: 43%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.kisela:hover .kisela_img{
+    transform: scale(1.0);
+}
+.cokoladna_torta_text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    font-style: italic;
+}
+.tiramisu:hover .tiramisu_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tiramisu_img {
+    width: 20%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.tiramisu:hover .tiramisu_img{
+    transform: scale(1.0);
+}
+
+.tiramisu_text {
+    text-align: center;
+    position: relative;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, 50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: black;
+    font-style: italic;
+}
+
+.tiramisu:hover .tiramisu_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tiramisu_img {
+    width: 40%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.tiramisu:hover .tiramisu_img{
+    transform: scale(1.0);
+}
+.cokoladna_torta:hover .cokoladna_torta_text  {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cokoladna_torta_img {
+    width: 40%;
+    border-radius: 3px;
+    transition: transform 0.3s;
+    transform: scale(0.9);
+}
+
+.cokoladna_torta:hover .cokoladna_torta_img{
+    transform: scale(1.0);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
